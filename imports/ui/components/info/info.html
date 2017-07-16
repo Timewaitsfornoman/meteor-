@@ -1,0 +1,22 @@
+<template name="info">
+    <h2 class="chat-title">聊天中</h2>
+    <ul class="chat-lists">
+        {{#each links}}
+        {{#if isCurrent}}
+        <li class="chat-item clearfix">
+            <img class="chat-icon fr fr-pd" src="{{headIcon}}" alt="{{userName}}"/>
+            <p class="chat-content fr content-color">{{chatInfor}}</p>
+        </li>
+        {{else}}
+        <li class="chat-item clearfix">
+            <img class="chat-icon" src="{{headIcon}}" alt="{{userName}}">
+            <p class="chat-content">{{chatInfor}}</p>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+    <form class="info-link-add">
+        <input class="chat-input" type="text" name="msg" required/>
+        <input type="submit" name="submit" value="发送" />
+    </form>
+</template>

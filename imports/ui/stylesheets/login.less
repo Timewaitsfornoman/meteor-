@@ -1,0 +1,239 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    padding: 0;
+    margin: 0;
+}
+#__blaze-root {
+    width: 100%;
+    height: 100%;
+}
+.contenter {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.right-top {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+button, input {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+#login-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.container:before {
+    display: block;
+    content: '';
+    width: 420px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(249, 249, 249, 1) 0%, rgba(250, 223, 154, 0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(250, 223, 154, 0.4))); /* Chrome,Safari4+ */
+    background: dient(center, ellipse cover, rgba(249, 249, 249, 1) 0%, rgba(250, 223, 154, 0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(249, 249, 249, 1) 0%, rgba(250, 223, 154, 0.4) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(249, 249, 249, 1) 0%, rgba(250, 223, 154, 0.4) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(249, 249, 249, 1) 0%, rgba(250, 223, 154, 0.4) 100%); /* W3C */
+    border-color: rgba(250, 223, 154, 0.3);
+    border-style: solid;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+}
+.container:after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #fceec6 url('img/kiss_light.jpg') no-repeat fixed 50% top;
+    background-size: cover;
+}
+.login-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 440px;
+    z-index: 2;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+}
+.form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 22px 26px 26px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 1) 0%, rgba(250, 223, 154, 0.4) 100%);
+}
+.form-title {
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+}
+.form p {
+    width: 100%;
+    height: 32px;
+    margin-top: 16px;
+    text-align: left;
+
+    &.remember-box {
+        height: 20px;
+        margin-top: 12px;
+    }
+}
+.remember-label {
+    line-height: 19px;
+    vertical-align: top;
+}
+.form input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgba(66, 66, 66, .3);
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    &.remember {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+    }
+}
+.form input[type="submit"], .form input[type="button"] {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(169, 68, 66, 0.6);
+}
+.form input[type="submit"]:hover, .form input[type="button"]:hover {
+    background-color: rgba(169, 68, 66, .9);
+}
+
+.log-wapper {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 6px;
+    margin: 0 auto 40px;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-sizing: border-box;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 20px;
+    border-color: #fffdfb;
+    border-style: solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    animation: sign 1.6s ease infinite alternate;
+    -webkit-transform: translateX(-50%, -50%);
+    transform: translateX(-50%, -50%);
+    border: 2px solid #ce1b2c;
+    box-shadow: 0 0 16px 8px rgb(255, 254, 251,.6);
+}
+.logo:before {
+    content: ' ';
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
+    border: 2px solid rgba(250, 223, 154, 0.4);
+}
+.loginhelp {
+    max-width: 28rem;
+    margin: 12px auto 0;
+    font-size: 14px;
+}
+.loginhelp a {
+    color: #666;
+}
+.loginhelp a:first-child {
+    float: left;
+}
+.loginhelp a:last-child {
+    float: right;
+}
+.footer-copy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    // background-image: url(//cdn.tinypng.com/images/grass.png);
+}
+@-webkit-keyframes sign {
+    0% {
+        -webkit-transform: translate(-50%, -20px);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -56%);
+    }
+}
+@keyframes sign {
+    0% {
+        transform: translate(-50%, -20px);
+    }
+    100% {
+        transform: translate(-50%, -56%);
+    }
+}
