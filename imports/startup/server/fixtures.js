@@ -6,9 +6,9 @@ import {Links,User} from '../../api/links/links.js';
 Meteor.startup(() => {
 
     // if the User collection is empty
-    if (User.find().count() === 0) {
+   if (User.find().count() === 0) {
         const data = [{
-            userName: 'llangzicao@163.com',
+            userName: 'hello@163.com',
             passWord: '123456',
             nickname: '小魔仙',
             headIcon: 'http://static2.ivwen.com/users/13067605/b271cd62df14465aa1e382ddf581c519.jpg',

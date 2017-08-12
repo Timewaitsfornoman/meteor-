@@ -1,0 +1,159 @@
+/* login */
+.login-wraper{
+  background:#fceec6 url('/images/kiss_light.jpg') no-repeat fixed left top;
+  background-size:100% 100%;
+}
+.login{
+  padding:0 16px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.form{
+  width: 100%;
+  height: auto;
+  max-width: 28rem;
+  padding:1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:6px;
+  box-sizing:border-box;
+  box-shadow: 0 0 24px rgba(0,0,0,0.3);
+  background:radial-gradient(ellipse at center, rgba(249,249,249,1) 0%,rgba(250,223,154,0.4) 100%);
+}
+.form p{
+	width:100%;
+	min-height:32px;
+  margin-top:1rem;
+}
+.form input{
+	display:block;
+	width: 100%;
+	font-size:14px;
+	padding:.5rem;
+	border: 1px solid rgba(66,66,66,.3);
+	border-radius:3px;
+	box-sizing: border-box;
+}
+.form input[type="submit"],.form input[type="button"]{
+	background-color:rgba(76,160,255,.9);
+	color:#fff;
+	cursor:pointer;
+}
+.form input[type="submit"]:hover,.form input[type="button"]:hover{
+	background-color:rgba(8,154,209,.6);
+}
+.logo{
+	display: block;
+	width: 140px;
+    margin: 96px auto 40px;
+}
+.loginhelp{
+  max-width: 28rem;
+  margin: 12px auto 0;
+  font-size: 14px;
+}
+.loginhelp a{
+	color:#fff;
+}
+.loginhelp a:first-child{
+	float:left;
+}
+.loginhelp a:last-child{
+	float:right;
+}
+
+/*light plug*/
+.swithbutton {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 1px solid #888;
+}
+.slider {
+    position: absolute;
+    top:0px;
+    left:30px;
+    width: 49px;
+    height: 30px;
+    background-color: #ddd;
+    color: #FFF;
+    border-radius: 16px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align:center;
+    cursor:pointer;
+    transition: left 0.5s ease 0s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#swithcheckbox{
+  display:none;
+}
+
+/* registuser */
+.registuser{
+  position: relative;
+  top: 50%;
+  margin-top: -124.5px;
+}
+.registuser label{
+  display: block;
+  width: 100%;
+  height:14px;
+  margin: 9px auto;
+}
+.registuser label input[type="checkbox"]{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+.registuser label span{
+  vertical-align: top;
+}
+/*menu*/
+.nav-menu{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 26px;
+  box-shadow: 0 0 2px rgba(0,0,0,.6);
+  text-align: center;
+}
+.nav{
+  position: absolute;
+  top: 39px;
+  left: 6px;
+  display: none;
+  width: 98%;
+  height:auto;
+  box-shadow: 0 0 6px rgba(66,99,33,.3);
+  z-index: 2;
+  background-color: #fff;
+  border-radius:0 12px 12px 12px;
+}
+.nav ul{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+}
+.nav ul li{
+}
+.nav ul li a{
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  text-indent: 12px;
+  color: #000;
+}
+@media (min-width:600px){
+  .nav-menu{
+    display: none;
+  }
+}

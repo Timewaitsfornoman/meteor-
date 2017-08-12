@@ -16,6 +16,9 @@ import {
 Meteor.methods({
     'users.insert' (data) {
         check(data, Object);
+        data.nickname = '游客';
+        data.headIcon = 'http://static2.ivwen.com/users/903616/39ccdc206e4e4200ae83994eb98bca2e.jpg';
+        data.createdAt = +new Date();
         return User.insert(data);
     },
     'users.find' (data) {
@@ -32,7 +35,7 @@ Meteor.methods({
     'links.insert' (msg, userId) {
         check(msg, String);
         check(userId, String);
-        console.log('##############',msg,userId);
+        
         var data = {
             'userId': userId,
             'uerName': '游客',
@@ -42,7 +45,7 @@ Meteor.methods({
 
         if (userId) {
             var user = User.findOne({_id:userId});
-            console.log('##############',user);
+         
             if (user) {
                 data.userName = user.nickname;
                 data.headIcon = user.headIcon;

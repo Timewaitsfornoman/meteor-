@@ -1,0 +1,21 @@
+.item {
+  margin:0px;
+  border:.1rem solid rgba(0,0,0,.3);
+  line-height:30px;
+}
+.item:first-child{
+  border-radius:.2rem .2rem 0 0;
+}
+
+.item:nth-child(n+2){
+  border-top:none;
+  border-radius:0;
+}
+
+.item:last-child{
+	boder-redius:0 0 .2rem .2rem;
+}
+.animated.fast {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+}
